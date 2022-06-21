@@ -1,0 +1,695 @@
+*{  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --color-pri: #BA7C1E;
+    --font-sec: 'Source Sans Pro', sans-serif;
+    --font-pri: 'Enriqueta', serif;
+}
+html{
+    overflow-x: hidden;
+}
+
+/*                         
+font-family: 'Enriqueta', serif;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+header{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    background-color:#BA7C1E ;
+    width: 100vw;
+}
+
+.navegador{
+    display: flex;
+    justify-content: center;    
+}
+
+
+.navegador img{
+   max-width: 50px;
+}
+
+
+
+
+.nav-link{
+    color: white;
+    height: 50px ;
+    font-family: var(--font-sec);
+    font-weight: 600;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav-link:hover{
+    background-color: white;
+}
+main{
+    width: 100vw;
+}
+
+
+.banner{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/pexels-ekaterina-bolovtsova-6077326.jpg);
+    overflow-x: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.banner-shadow{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner-area{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-pri);
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    color: white;
+    
+}
+
+.banner-area h2{
+    font-size: 20px;
+    color: var(--color-pri);
+}
+.banner-area a{
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: var(--color-pri);
+    width: 100px;
+    color: white;
+    font-family: var(--font-sec);
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.banner-area a:hover{
+    opacity: 0.8;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.sect-sobre{
+    width: 100%;
+    background-color: white;
+}
+
+.sobre-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-title h3{
+    font-family: var(--font-sec);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-pri);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.sobre-title h4{
+    font-family: var(--font-pri);
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+
+.sobre-text{
+    max-width: 500px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sobre-text p{
+    border-top: 2px solid var(--color-pri);
+    border-bottom: 2px solid var(--color-pri);
+    padding: 40px ;
+}
+
+.section-propa{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.propra-area{
+    justify-content: center;
+    align-items: center;
+}
+
+.mex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.col img{
+    width: 130px;
+    
+}
+.col p{
+    font-size: 20px;
+    color: white;
+    max-width: 250px;
+    text-align: center;
+    font-family: var(--font-sec);
+    margin-bottom: 20px;
+}
+
+.section-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-xl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-xl h3{
+    font-family: var(--font-sec);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-pri);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.row{
+    max-width: 1000px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cards img{
+    width: 120px;
+    height: 150px;
+    
+}
+
+.cards h5{
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+    top: 100px;
+    color: white;
+    text-shadow: 1px 1px  black;
+    font-family: var(--font-sec);
+}
+.cards a{
+    text-decoration: none;
+}
+
+.degrader{
+    background-color: rgba(0, 0, 0, 0.055);
+    width: 120px;
+    height: 150px;
+    position: relative;
+    top:-150px ;
+    transition:  0.5s ease;
+}
+
+.degrader:hover{
+    background-color: rgba(0, 0, 0, 0.219);
+}
+
+.section-card{
+    max-width: 1200px;
+}
+
+.section-card-title{
+    font-family: var(--font-pri);
+    border-bottom: 3px solid var(--color-pri);
+    padding: 20px 50px;
+    margin-bottom: 50px;    
+}
+
+.section-area-card{
+    width: 150px;
+    height: 220px;
+    background-color: var(--color-pri);
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.section-area-card img{
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.section-area-card p{
+    font-size: 16px;
+    width: 120px;
+    font-family: var(--font-sec);
+}
+
+.bot-agendar{
+    text-decoration: none;
+    width: 150px;
+    background-color: #000000;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-family: var(--font-sec);
+}
+
+.bot-agendar:hover{
+    background-color: rgba(0, 0, 0, 0.856);
+    color: var(--color-pri);
+}
+
+.section-andres{
+    display: flex;
+    flex-direction: column;
+    background-color: black;align-items: center;
+}
+.section-andres h3{
+    font-family: var(--font-sec);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-pri);
+    text-align: center;
+    margin-top: 40px;
+    border-bottom: 2px solid white;
+    padding: 10px 50px;
+}
+
+.section-andres-area{
+    width: 800px;
+    height: 300px;
+    margin: 50px;
+}
+
+.section-contato{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    background-color: var(--color-pri);
+
+}
+
+.section-contato h3{
+    margin: 30px 0px;
+    color: white;
+    font-family: var(--font-pri);
+    border-bottom:  2px solid black;
+    padding: 10px 50px;
+}
+
+.section-contato-area{
+    display: flex;
+    justify-content: center;
+}
+
+.section-contato-left, .section-contato-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+}
+
+.contato-left-area{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contato-left-area img{
+    width: 50px;
+    margin-right: 10px;
+}
+.contato-left-area p, .contato-left-area a{
+    color: #000000;
+    font-family: var(--font-sec);
+    font-weight: 500;
+    
+}
+
+.contato-left-area a:hover{
+    color: blue;
+}
+
+.section-contato-right h4{
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+    margin-bottom: 20px;
+}
+
+input[type="email"]{
+    width: 200px;
+    height: 25px;
+    border: 0px;
+    outline: none;
+    padding: 0px 10px;
+    margin-left: 6px;
+    margin-bottom: 20px;
+}
+
+input[type="text"]{
+    width: 160px;
+    border: 0px;
+    outline: none;
+    padding: 0px 10px;
+}
+
+input[type="submit"]{
+    margin-top: 30px; 
+    margin-left: 200px;
+    padding: 2px 20px;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    background-color: #000000;
+}
+.rodape-img img{
+    width: 30px;
+    margin: 10px 5px;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.747);
+    font-size: 13px;
+}
+
+iframe {
+    width: 800px;
+    height: 300px;
+}
+
+
+/* parte das pages secundarias*/
+
+.banner-geral{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.banner-area-geral{ 
+    font-family: var(--font-pri);
+    position: relative;
+    top: -280px;
+    left: 43%;
+    color: white;
+}
+
+
+.banner-empresarial{
+    background-image: url(images/pexels-samuel-sweet-6016794.jpg);
+}
+.banner-aposentadoria{
+    background-image: url(images/pexels-pixabay-33786.jpg);
+}
+
+.banner-trabalhista{
+    background-image: url(images/pexels-ivan-samkov-4240571\ \(1\).jpg);
+}
+
+.banner-familiar{
+    background-image: url(images/pexels-pavel-danilyuk-8763081.jpg);
+}
+
+.banner-civil{
+    background-image: url(images/pexels-andrea-piacquadio-927022.jpg);
+}
+
+.botao-agendar{
+    margin-bottom: 40px;
+    text-decoration: none;
+    padding: 5px 30px;
+    background-color: var(--color-pri);
+    border-radius: 5px;
+    color: white;
+    font-family: var(--font-sec);
+    font-weight: 600;
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.botao-agendar:hover{
+    color: var(--color-pri);
+    background-color: #000000;
+}
+
+@media (min-width: 380px) and (max-width:425px){
+    .banner{
+        background-image: url(images/banner.jpg);
+        background-position: cover;
+    }
+
+    .banner-area{
+        left: 124px;
+    }
+    .sobre-area{
+        padding: 0px 25px;
+    }
+    
+    .media{
+        display: flex;
+        flex-direction: column;
+    }
+    .mex{
+        border-bottom: 2px solid var(--color-pri);
+    }
+
+    .media :last-child{
+        border-bottom: 0px;
+    }
+
+    .mex img{
+        width: 100px;
+    }
+    .mex p{
+        font-size: 16px;
+    }
+    .media-service{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards a{
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .cards img{
+        width: 220px;
+        height: 250px;
+    }
+    .cards h5{
+        top: 150px;
+    }
+
+    .degrader{
+        width: 220px;
+        height: 250px;
+        top: -250px;
+    }
+
+    .section-consultas{
+        padding: 0px 25px;
+        
+    }
+    .section-area-concultas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .section-card-title{
+        font-size: 17px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .bot-agendar{
+        margin-top: 0px;
+    }
+    .section-andres-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 320px;
+        margin: auto;
+    }
+
+    .section-contato-area {
+        flex-direction: column;
+    }
+
+    /* media pages secundaria*/
+    .ajuste{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-position: -280px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .media-geral{
+        left: 30%;
+    }
+}
+
+@media (min-width: 320px) and (max-width:379px){
+    .banner{
+        background-image: url(images/banner.jpg);
+        background-position: cover;
+    }
+
+    .banner-area{
+        left: 17%;
+    }
+    .sobre-area{
+        padding: 0px 25px;
+    }
+
+    .sobre-text{
+        font-size: 14px;
+    }
+    
+    .media{
+        display: flex;
+        flex-direction: column;
+    }
+    .mex{
+        border-bottom: 2px solid var(--color-pri);
+    }
+
+    .media :last-child{
+        border-bottom: 0px;
+    }
+
+    .mex img{
+        width: 100px;
+    }
+    .mex p{
+        font-size: 16px;
+    }
+    .media-service{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards a{
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .cards img{
+        width: 220px;
+        height: 250px;
+    }
+    .cards h5{
+        top: 150px;
+    }
+
+    .degrader{
+        width: 220px;
+        height: 250px;
+        top: -250px;
+    }
+
+    .section-consultas{
+        padding: 0px 25px;
+        
+    }
+    .section-area-concultas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .section-card-title{
+        font-size: 17px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .bot-agendar{
+        margin-top: 0px;
+    }
+    .section-andres-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    iframe{
+        width: 250px;
+        margin: auto;
+    }
+
+    .section-contato-area {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+
+    /*media page secundarias*/
+    .ajuste{
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+        background-position: -280px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .media-geral{
+        left: 30%;
+    }
+}
+
+@media (min-width: 1700px){
+    .banner-area{
+        left: 30%;
+    }
+}
