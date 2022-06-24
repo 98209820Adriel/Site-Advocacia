@@ -577,6 +577,9 @@ iframe {
     .media-geral{
         left: 30%;
     }
+    .banner-area-geral{
+        top: -55%;
+    }
 }
 
 @media (min-width: 320px) and (max-width:379px){
@@ -587,6 +590,9 @@ iframe {
 
     .banner-area{
         left: 17%;
+    }
+    .banner-area-geral{
+        top: -55%;
     }
     .sobre-area{
         padding: 0px 25px;
@@ -691,5 +697,9 @@ iframe {
 @media (min-width: 1700px){
     .banner-area{
         left: 30%;
+       
+    }
+    .banner-area-geral{
+        top: -500px;
     }
 }
